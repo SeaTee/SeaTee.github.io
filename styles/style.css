@@ -1,0 +1,151 @@
+html,
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(-10deg, rgb(90, 72, 255),#9933ff );
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+}
+
+a.nav-link {
+    color: white!important;
+}
+
+.navbar-brand {
+    color: white!important;
+}
+
+/* Header */
+header h1 {
+    margin-top: 35vh;
+    font-size: 5rem;
+    color: white;
+}
+
+header p {
+    color: white;
+}
+
+header img {
+    margin-top: 170px;
+    animation: cloud 5s infinite;
+}
+
+header button {
+    margin-right: 20px;
+    transition: ease-in-out 0.5s 0s;
+}
+
+header button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+.btn-outline-white {
+    border: white 1px solid;
+    color: white;
+    background: none;
+}
+
+/* Cloud animation */
+@keyframes cloud {
+    50% {transform: translateY(-30px);}
+    100% {transform: translateY(0px);}
+}
+
+/* Intergrations */
+
+#company {
+    margin-top: 300px;
+    background: white;
+}
+
+#company img {
+    padding-top: 20px;
+    filter: grayscale(100%);
+    transition: ease-in-out 0.2s 0s;
+}
+
+#company img:hover {
+    filter: grayscale(0%);
+}
+
+/* App */
+
+#app {
+    background: rgb(204, 204, 204);
+}
+
+/* Pricing */ 
+
+#pricing h4 {
+    font-size: 40px;
+}
+
+#pricing a {
+    margin: 0 auto;
+}
+
+.card {
+    transition: ease-in-out 0.2s 0s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px;
+}
+
+/* About */ 
+
+#about {
+    background: white;
+    margin-top: 100px;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    line-height: 2em;
+    transition: ease-in-out 0.2s 0s;
+}
+
+footer a:hover {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+}
+
+.footer-company {
+    border-top: 1px solid white;
+}
+
+/* Mobile */ 
+
+ @media (max-width: 768px) { 
+     footer {
+         text-align: center;
+     }
+     header img {
+         display: none;
+     }
+    }
+  @media (max-width: 992px) {
+    .card {
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+  }
+  @media (max-width: 576px) {
+      #company img {
+          width: 100px;
+      }
+      #company .col-sm-6 {
+          width: 33.33%;
+      }
+   }
